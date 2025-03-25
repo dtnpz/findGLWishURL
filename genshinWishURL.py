@@ -1,7 +1,7 @@
 import re
 import subprocess
 
-file_path = "/datadisk/Games/Genshin Impact game/GenshinImpact_Data/webCaches/2.34.0.0/Cache/Cache_Data/data_2"
+file_path = "Genshin Impact game/GenshinImpact_Data/webCaches/2.34.0.0/Cache/Cache_Data/data_2"
 pattern = r"https://gs\.hoyoverse\.com/genshin/event/e20190909gacha-v3/.*?&game_biz=hk4e_global"
 
 def getLastMatchURL(file_path, pattern):
