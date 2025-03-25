@@ -5,13 +5,13 @@ file_path = "Genshin Impact game/GenshinImpact_Data/webCaches/2.34.0.0/Cache/Cac
 pattern = r"https://gs\.hoyoverse\.com/genshin/event/e20190909gacha-v3/.*?&game_biz=hk4e_global"
 
 def getLastMatchURL(file_path, pattern):
-    last_match = None
+    lastMatch = None
     with open(file_path, "r", encoding="utf-8", errors="ignore") as file:
         for line in file:
             matches = re.findall(pattern, line)
             if matches:
-                last_match = matches[-1]
-    return last_match
+                lastMatch = matches[-1]
+    return lastMatch
 
 last_url = getLastMatchURL(file_path, pattern)
 
